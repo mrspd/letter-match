@@ -1,8 +1,14 @@
+html {
+    overscroll-behavior: none;
+}
+
 body {
     margin: 0;
     padding: 0;
     color: rgba(255, 255, 255, 0.87);
     background-color: #000000;
+    overscroll-behavior: none;
+    touch-action: none;
 }
 
 #app {
@@ -12,4 +18,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    touch-action: none;
+}
+
+canvas {
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
